@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+   <head> 
+     <title>Login Form</title> 
+     <style> 
+       * { 
+         box-sizing: border-box; 
+         margin: 0; 
+         padding: 0; 
+         font-family: Arial, Helvetica, sans-serif; 
+       } 
+       body { 
+         height: 100vh; 
+         width: 100vw; 
+         display: flex; 
+         justify-content: center; 
+         align-items: center;
+       } 
+       form { 
+         display: flex; 
+         flex-direction: column; 
+         justify-content: center; 
+         align-items: center; 
+         gap: 2rem; 
+         border: 2px solid rgb(132, 251, 255); 
+         padding: 1.5rem; 
+         background-color: rgba(255, 255, 255, 0.4); 
+         backdrop-filter: blur(20px); 
+         -webkit-backdrop-filter: blur(20px); 
+         border-radius: 0.5rem; 
+         box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+       } 
+  
+       .buttons > input { 
+         display: inline-block; 
+         margin: 0 1rem; 
+         padding: 0.2rem; 
+         border-radius: 0.3rem; 
+         border: 0; 
+         background-color: #fff; 
+       } 
+ .userpass > input{ 
+   margin: 0 0 0 .4rem; 
+ } 
+       input[type="submit"]:hover { 
+         background-color: rgb(0, 255, 0); 
+         color: white; 
+       } 
+       input[type="reset"]:hover { 
+         background-color: rgb(255, 49, 49); 
+         color: white; 
+       } 
+     </style> 
+   </head> 
+   <body> 
+     <form action="#" method="get"> 
+       <div class="heading"> 
+         <h1>Login Form</h1> 
+       </div> 
+       <div class="username"> 
+         <label for="uName">UserName : </label> 
+         <input 
+           type="text" 
+           name="UserName" 
+           id="uName" 
+           placeholder="Enter User Name ..." 
+         /> 
+       </div> 
+       <div class="userpass"> 
+         <label for="uPass">Password : </label> 
+         <input 
+           type="password" 
+           name="UserPassword" 
+           id="uPass" 
+           placeholder="Enter Password ..." 
+         /> 
+       </div> 
+       <div class="buttons"> 
+         <input type="submit" value="Submit" /> 
+         <input type="reset" value="Clear" /> 
+       </div> 
+     </form> 
+   </body> 
+ </html>
